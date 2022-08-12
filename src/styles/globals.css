@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  html,
+  body {
+    @apply font-custom h-full;
+  }
+  blockquote > p {
+    @apply text-emerald-600;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl mb-5;
+  }
+  h3 {
+    @apply text-lg mb-2;
+  }
+  ul {
+    @apply mt-4 list-disc;
+  }
+}
+
+@layer components {
+  #__next {
+    @apply h-full w-full;
+  }
+  .wrap {
+    @apply flex items-center justify-center;
+  }
+}
+
+@layer utilities {
+  .keep-all {
+    word-break: keep-all;
+  }
+  .align-text-20 {
+    vertical-align: -20%;
+  }
+}
+/* 
+@font-face {
+  font-family: "IBM";
+  src: url("/fonts/IBMPlexSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareR";
+  src: url("/fonts/NanumSquareR.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gowun";
+  src: url("/fonts/GowunDodum.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url("/fonts/Consolasligaturizedv2.woff2") format("woff2");
+  font-weight: normal;
+} */
